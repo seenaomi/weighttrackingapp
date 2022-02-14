@@ -41,13 +41,11 @@
         android:textSize="20sp" />
 
     <TextView
-        android:id="@+id/avg_weight_loss_label"
+        android:id="@+id/goal_weight_label"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
         android:layout_below="@id/starting_weight_label"
-        android:layout_alignLeft="@id/starting_weight_label"
-        android:layout_alignRight="@id/starting_weight_label"
         android:text="@string/goal_weight_label"
         android:textSize="20sp"/>
 
@@ -55,10 +53,10 @@
         android:id="@+id/goal_weight"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignBottom="@id/avg_weight_loss_label"
+        android:layout_alignBottom="@id/goal_weight_label"
         android:layout_alignParentRight="true"
         android:layout_marginLeft="8dp"
-        android:layout_toRightOf="@id/avg_weight_loss_label"
+        android:layout_toRightOf="@id/goal_weight_label"
         android:background="@android:color/transparent"
         android:hint="@string/goal_weight_hint"
         android:inputType="number"
@@ -69,9 +67,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
-        android:layout_below="@id/avg_weight_loss_label"
-        android:layout_alignLeft="@id/avg_weight_loss_label"
-        android:layout_alignRight="@id/avg_weight_loss_label"
+        android:layout_below="@id/goal_weight_label"
         android:text="@string/target_date_label"
         android:textSize="20sp"/>
 
@@ -115,8 +111,6 @@
         android:layout_width="79dp"
         android:layout_height="wrap_content"
         android:layout_below="@id/height_label"
-        android:layout_alignLeft="@id/height_label"
-        android:layout_alignRight="@id/height_label"
         android:layout_marginTop="20dp"
         android:layout_marginRight="-15dp"
         android:text="@string/gender_label"

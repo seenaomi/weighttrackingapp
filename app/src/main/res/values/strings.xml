@@ -2,9 +2,9 @@
     <string name="app_name">Weight Tracking App</string>
 
     <string name="account_settings_label">Account Settings</string>
-    <string name="starting_weight_label">Starting Weight:</string>
+    <string name="starting_weight_label">Starting Weight in lbs:</string>
     <string name="starting_weight_hint">Example: 185</string>
-    <string name="goal_weight_label">Goal Weight:</string>
+    <string name="goal_weight_label">Goal Weight in lbs:</string>
     <string name="goal_weight_hint">Example: 145</string>
     <string name="target_date_label">Target Date:</string>
     <string name="target_date">Select A Date</string>
@@ -21,7 +21,6 @@
     <string name="save_settings">Save</string>
     <string name="goto_summary">Goto Summary</string>
 
-
     <string name="account_summary_label">Status Summary</string>
     <string name="weight_and_bmi_label">Current Weight &amp; BMI</string>
     <string name="weight">XXX</string>
@@ -31,10 +30,17 @@
     <string name="weight_loss_to_date_label">Weight Loss To Date</string>
     <string name="weight_loss_to_date">XXX</string>
 
+    <string name="entry_history_label">Entry History Review</string>
+
+    <string name="weight_entry_label">Weight Status Updates</string>
+    <string name="update_date_label">Today\'s date:</string>
+    <string name="weight_update_label">Current Weight in lbs:</string>
+    <string name="picture_update_label">Attach a progress photo:</string>
+    <string name="cancel_return_to_summary">Cancel</string>
+
     <string name="add_entry">Add A New Entry</string>
     <string name="review_history">Review Entry History</string>
     <string name="update_settings">Update Your Settings</string>
-
 
 
 </resources>
