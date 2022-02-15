@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".client.SummaryFragment">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingLeft="12dp"
+        android:paddingTop="8dp"
+        android:paddingRight="12dp"
+        android:paddingBottom="8dp">
+
+        <TextView
+            android:id="@+id/account_summary_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="40dp"
+            android:text="@string/account_summary_label"
+            android:textSize="40sp" />
+
+        <TextView
+            android:id="@+id/weight_and_bmi_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/account_summary_label"
+            android:layout_centerHorizontal="true"
+            android:text="@string/weight_and_bmi_label"
+            android:textSize="28sp" />
+
+        <EditText
+            android:id="@+id/weight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/weight_and_bmi_label"
+            android:layout_alignParentLeft="true"
+            android:layout_toLeftOf="@+id/bmi"
+            android:background="@android:color/transparent"
+            android:inputType="none"
+            android:textSize="28sp"
+            android:layout_marginTop="10dp"/>
+
+        <EditText
+            android:id="@+id/bmi"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/weight_and_bmi_label"
+            android:layout_alignParentRight="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:background="@android:color/transparent"
+            android:inputType="none"
+            android:textSize="28sp" />
+
+        <TextView
+            android:id="@+id/avg_weight_loss_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/weight"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:text="@string/avg_weight_loss_label"
+            android:textSize="28sp" />
+
+        <EditText
+            android:id="@+id/avg_weight_loss"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/avg_weight_loss_label"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:background="@android:color/transparent"
+            android:inputType="none"
+            android:textSize="28sp" />
+
+        <TextView
+            android:id="@+id/weight_loss_to_date_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/avg_weight_loss"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:text="@string/weight_loss_to_date_label"
+            android:textSize="28sp" />
+
+        <EditText
+            android:id="@+id/weight_loss_to_date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/weight_loss_to_date_label"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:background="@android:color/transparent"
+            android:inputType="none"
+            android:textSize="28sp" />
+
+        <Button
+            android:id="@+id/add_entry"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/weight_loss_to_date"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:text="@string/add_entry"
+            android:textAlignment="center"
+            android:textSize="24sp" />
+
+        <Button
+            android:id="@+id/review_history"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/add_entry"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            android:text="@string/review_history"
+            android:textSize="24sp" />
+
+        <Button
+            android:id="@+id/update_settings"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/review_history"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            android:text="@string/update_settings"
+            android:textSize="24sp" />
+
+    </RelativeLayout>
+
+</FrameLayout>

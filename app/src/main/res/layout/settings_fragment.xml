@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:foregroundGravity="fill"
+    tools:context=".client.SettingsFragment">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingLeft="12dp"
+        android:paddingTop="8dp"
+        android:paddingRight="12dp"
+        android:paddingBottom="8dp">
+
+        <TextView
+            android:id="@+id/account_settings_label"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginBottom="40dp"
+            android:text="@string/account_settings_label"
+            android:textSize="28sp" />
+
+        <TextView
+            android:id="@+id/starting_weight_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/account_settings_label"
+            android:text="@string/starting_weight_label"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/starting_weight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/starting_weight_label"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="8dp"
+            android:layout_toRightOf="@id/starting_weight_label"
+            android:background="@android:color/transparent"
+            android:hint="@string/starting_weight_hint"
+            android:inputType="number"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/goal_weight_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/starting_weight_label"
+            android:layout_marginTop="20dp"
+            android:text="@string/goal_weight_label"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/goal_weight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/goal_weight_label"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="8dp"
+            android:layout_toRightOf="@id/goal_weight_label"
+            android:background="@android:color/transparent"
+            android:hint="@string/goal_weight_hint"
+            android:inputType="number"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/target_date_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/goal_weight_label"
+            android:layout_marginTop="20dp"
+            android:text="@string/target_date_label"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/target_date"
+            android:layout_width="167dp"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/target_date_label"
+            android:layout_alignParentRight="true"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="3dp"
+            android:layout_marginRight="102dp"
+            android:layout_marginBottom="-15dp"
+            android:layout_toRightOf="@id/target_date_label"
+            android:text="@string/target_date" />
+
+        <TextView
+            android:id="@+id/height_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/target_date_label"
+            android:layout_marginTop="60dp"
+            android:text="@string/height_label"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/height"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/height_label"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@id/height_label"
+            android:background="@android:color/transparent"
+            android:hint="@string/height_hint"
+            android:inputType="numberDecimal"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/gender_label"
+            android:layout_width="79dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/height_label"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="-15dp"
+            android:text="@string/gender_label"
+            android:textSize="20sp" />
+
+        <Spinner
+            android:id="@+id/gender"
+            android:layout_width="292dp"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/gender_label"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="17dp"
+            android:layout_marginEnd="36dp"
+            android:layout_marginBottom="-12dp"
+            android:layout_toEndOf="@id/gender_label"
+            android:background="@android:drawable/btn_dropdown"
+            android:entries="@array/genders_array"
+            android:spinnerMode="dropdown" />
+
+        <Button
+            android:id="@+id/save_settings"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/gender_label"
+            android:layout_marginBottom="-127dp"
+            android:onClick="saveSettings"
+            android:text="@string/save_settings" />
+
+        <Button
+            android:id="@+id/return_to_summary"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/gender_label"
+            android:layout_marginStart="32dp"
+            android:layout_marginBottom="-127dp"
+            android:layout_toEndOf="@id/save_settings"
+            android:text="@string/goto_summary" />
+
+    </RelativeLayout>
+
+</FrameLayout>
